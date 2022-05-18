@@ -60,7 +60,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;    
+    text-align: center;   
+    border: 1px solid #999; 
+    border-radius: 3px;
 }
 .form-input-box span{
     width: 100%;
@@ -79,4 +81,40 @@
 .form-btn{
     margin-top: 20px;
     width: 200px;
+}
+.form-title-end{
+    margin-top: 70px;
+}
+.form-text-input{
+    width: 100%;
+    padding: 9px;
+    outline: none;
+    border: 1px solid #999; 
+    border-radius: 3px;
+}
+.form-text-input:focus{
+    border: 1px solid var(--blue);
+    border: 1px solid #999; 
+}
+.form-end-inputs{
+    display: flex;
+    justify-content: space-between;
+}
+.form-end-input input{
+    width: calc(100% - 20px);
+    padding: 9px;
+    outline: none;
+    border: none;
+    
+}
+.form-end-input{
+    display: flex;
+    align-items: center;
+    width: 31%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.form-end-input label{
+    cursor: pointer;
+    color: var(--gray);
 }
