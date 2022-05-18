@@ -1,0 +1,82 @@
+.form{
+    width: 100%;
+    padding: 30px;
+    background-image: url(../../images/form-fon.webp);
+    margin: 40px 0;
+}
+.create-from-container{
+    width: 100%;
+    max-width: 1300px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.create-form-box{
+    width: 45%;
+    min-width: 400px;
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 3px;
+    margin: 10px auto;
+}
+.form-header,
+.form-title{
+    font-size: 22px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+.form-title{
+    font-size: 14px;
+    margin-top: 20px;
+}
+.form-select{
+    width: 100%;
+    border-radius: 3px;
+    padding: 10px;
+    outline: none;
+}
+.form-select:focus{
+    border: 1px solid var(--blue);
+}
+.form-inputs{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    
+}
+.form-input-box{
+    width: 100px;
+}
+.form-input-box input{
+    width: 100%;
+    outline: none;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;    
+}
+.form-input-box span{
+    width: 100%;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+    color: var(--black);
+    font-weight: 500;  
+}
+.form-input-box input[type="number"]::-webkit-outer-spin-button,
+.form-input-box input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.form-btn{
+    margin-top: 20px;
+    width: 200px;
+}
