@@ -2,6 +2,8 @@ import { useState } from 'react';
 import TooltipSlider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import './form.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // import icons
 import {BiUser} from 'react-icons/bi';
@@ -14,11 +16,13 @@ const Form = () => {
   const [kilometrs, setKilometrs] = useState([2500, 7500]);
   const [prices, setPrices] = useState([2500, 7500]);
 
+  AOS.init();
+
   console.log(carYears[0]);
   return (
     <div className='form'>
       <div className="create-from-container">
-        <div className="create-form-box">
+        <div className="create-form-box"   data-aos="zoom-in">
           <div className="form-header">
             Купить автомобиль
           </div>
@@ -152,7 +156,7 @@ const Form = () => {
         <div className="new-auto-show-more form-btn">Продать автомобиль</div>
 
       </div>
-      <div className="create-form-box">
+      <div className="create-form-box"  data-aos="zoom-in">
         <div className="form-header">
             Купить автомобиль
           </div>

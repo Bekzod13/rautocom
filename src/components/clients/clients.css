@@ -1,0 +1,116 @@
+.client-header{
+    display: block;
+    width: 260px;
+    background: #f0f0f0;
+    padding: 5px 0;
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+}
+.client-header-line{
+    content: "";
+    height: 1px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    left: 0;
+    top: -70px;
+    background: #f0f0f0;
+    z-index: -1;
+}
+.client-bottom-btn{
+    margin-top: 20px;
+    padding: 10px;
+    width: 280px;
+    font-size: 16px;
+}
+.client-slider{
+    width: 100%;
+    height: 650px;
+    overflow-x: hidden;
+}
+.slick-track{
+    display: flex;
+    column-gap: 20px;
+}
+.slick-slide{
+    position: relative;
+    transform: scale(.99);
+}
+.client-slide{
+    box-shadow: var(--shadow);
+    border-radius: 3px;
+    padding: 20px;
+    cursor: grab;
+    transition: .4s;
+}
+.client-slide:hover{
+    transform: translateY(-2px);
+}
+.client-slide-img{
+    width: 100%;
+}
+.client-slide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.client-slide-name{
+    margin-top: 20px;
+    text-align: center;
+    color: var(--blue);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.client-slide-description{
+    text-align: center;
+    font-size: 15px;
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+.client-slide-price{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: red;
+}
+.client-slide-price span{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black);
+}
+.client-slide-link{
+    width: 45%;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+    transition: .3s;
+}
+.client-slide-link:hover{
+    background: #ddd;
+}
+.client-slide-links{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #808080;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.dot-active{
+    background: #808080;
+}

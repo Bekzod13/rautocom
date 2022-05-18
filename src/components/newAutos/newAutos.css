@@ -44,7 +44,8 @@
     color: var(--white);
     font-size: 24px;
     font-weight: 600;
-    width: 200px;
+    min-width: 180px;
+    width: 30%;
     opacity: .85;
     transition: .2s;
     border-radius: 3px;
