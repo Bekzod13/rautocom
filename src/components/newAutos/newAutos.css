@@ -159,6 +159,20 @@
     transform: translateY(5px);
     cursor: pointer;
 }
+.new-auto-show-more{
+    padding: 6px 30px;
+    background: var(--yellow);
+    font-size: 13px;
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 320px;
+    margin: 10px auto;
+    color: var(--white);
+    letter-spacing: -.2px;
+}
 @media screen and (max-width: 880px) {
     .new-auto-social-box,
     .new-auto-social-text{

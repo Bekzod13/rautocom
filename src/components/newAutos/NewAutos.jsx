@@ -1,5 +1,8 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './newAutos.css';
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 
 // import icons
@@ -7,6 +10,7 @@ import {FaViber, FaTelegram, FaRegDotCircle, FaBalanceScale} from 'react-icons/f
 import {HiOutlineMail} from 'react-icons/hi';
 import {BiGasPump} from 'react-icons/bi';
 import {FiSettings} from 'react-icons/fi';
+import {RiArrowRightSLine} from 'react-icons/ri';
 import {MdOutlineSpeed} from 'react-icons/md';
 
 // import images
@@ -104,6 +108,11 @@ const data = [
 ]
 
 const NewAutos = () => {
+    useEffect(() => {
+        AOS.init();
+      }
+    , [])
+    
   return (
     <div className="container new-auto">
         <h1>Новые поступления</h1>
@@ -143,7 +152,10 @@ const NewAutos = () => {
         <div className="new-auto-container">
             {
                 data.map(item=>(
-                    <div key={item.id} className="new-auto-card">
+                    <div key={item.id} 
+                    className="new-auto-card" 
+                    data-aos="flip-right"
+                    data-aos-duration="1000">
                         <div className="new-auto-img">
                             <img src={item.image} alt={item.name} />
                         </div>
@@ -210,6 +222,9 @@ const NewAutos = () => {
                 ))
             }
         </div>
+        <Link to="/" className="new-auto-show-more">
+            ПОКАЗАТИ ВСІ АВТОМОБІЛІ <RiArrowRightSLine/><RiArrowRightSLine/><RiArrowRightSLine/>
+        </Link>
     </div>
   )
 }
