@@ -1,0 +1,96 @@
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
+.hero{
+    width: 100%;
+    height: 600px;
+    background-image: url(../../images/slider-wraper.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+.hero-container{
+    position: relative;
+}
+.hero-main{
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.hero-header{
+    font-size: 46px;
+    color: var(--gray);
+    width: 400px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.hero-description{
+    font-weight: 500;
+    color: var(--black);
+    margin-bottom: 30px;
+}
+.hero-description span{
+    color: var(--yellow);
+}
+.hero-btn{
+    padding: 10px 30px;
+    background: var(--yellow);
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.slick-slide{
+    width: 100%;
+    display: flex;
+    height: 600px;
+    position: relative;
+    align-items: center;
+}
+.hero-slide img{
+    object-fit: contain;
+    position: relative;
+    right: -50%;
+    width: 50%;
+}
+@media screen and (max-width:880px) {
+    .hero{
+        background-size: cover;
+        height: 500px;
+    }
+    .slick-slide{
+        width: 80%;
+    }
+    .hero-slide img{
+        bottom: -260px;
+        width: 50%;
+    }
+    .hero-main{
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .hero-header{
+        font-size: 32px;
+        color: var(--gray);
+        width: 400px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        padding-top: 20px;
+    }
+    .hero-btn{
+        padding: 7px 20px;
+        background: var(--yellow);
+        color: var(--black);
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
