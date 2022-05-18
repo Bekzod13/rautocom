@@ -14,7 +14,7 @@
 }
 .create-form-box{
     width: 45%;
-    min-width: 400px;
+    min-width: 300px;
     display: block;
     flex-direction: column;
     flex-wrap: wrap;

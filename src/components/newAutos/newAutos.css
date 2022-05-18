@@ -29,6 +29,7 @@
 }
 .new-auto-social-box{
     display: flex;
+    flex-wrap: wrap;
     height: 100%;
     align-items: center;
     width: 50%;
@@ -185,5 +186,9 @@
     .new-auto-social-item,
     .new-auto-social-text{
         font-size: 18px;
+    }
+    .new-auto-social-item{
+        width: calc(100% - 90px);
+        margin-top: 10px;
     }
 }
