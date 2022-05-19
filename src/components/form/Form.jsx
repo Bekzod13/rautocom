@@ -17,8 +17,6 @@ const Form = () => {
   const [prices, setPrices] = useState([2500, 7500]);
 
   AOS.init();
-
-  console.log(carYears[0]);
   return (
     <div className='form'>
       <div className="create-from-container">
@@ -27,7 +25,7 @@ const Form = () => {
             Купить автомобиль
           </div>
           <div className="form-title">Кузов</div>
-          <select className='form-select' >
+          <select className='form-select'>
             <option value="Хетчбек">Хетчбек</option>
             <option value="Кроссовер">Кроссовер</option>
             <option value="Седан">Седан</option>
@@ -172,19 +170,19 @@ const Form = () => {
           <div className="form-end-inputs">
             <div className="form-end-input">
               <input id='imya' type="text" placeholder='Ваше Имя' />
-              <label for='imya'>
+              <label htmlFor='imya'>
                 <BiUser/>
               </label>
             </div>
             <div className="form-end-input">
               <input id='telefon' type="text" placeholder='Ваш Телефон' />
-              <label for="telefon">
+              <label htmlFor="telefon">
                 <BsPhone/>
               </label>
             </div>
             <div className="form-end-input">
               <input id='emayl' type="text" placeholder='Ваш Email' />
-              <label for="emayl">
+              <label htmlFor="emayl">
                 <MdOutlineMailOutline/>
               </label>
             </div>
